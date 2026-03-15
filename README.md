@@ -23,12 +23,12 @@ Cross-platform proxy client built on [Xray-core](https://github.com/XTLS/Xray-co
 
 | Platform | Link |
 |:---------|:-----|
-| Windows x64 | [Setup EXE](https://github.com/INCY-DEV/incy-linux/releases/latest/download/incy-windows-x64-setup.exe) |
-| Windows ARM64 | [Setup EXE](https://github.com/INCY-DEV/incy-linux/releases/latest/download/incy-windows-arm64-setup.exe) |
-| macOS (Apple Silicon) | [DMG](https://github.com/INCY-DEV/incy-linux/releases/latest/download/incy-macos-arm64.dmg) |
-| macOS (Intel) | [DMG](https://github.com/INCY-DEV/incy-linux/releases/latest/download/incy-macos-intel.dmg) |
-| Linux x64 | [.deb](https://github.com/INCY-DEV/incy-linux/releases/latest/download/incy-linux-x64.deb) · [.rpm](https://github.com/INCY-DEV/incy-linux/releases/latest/download/incy-linux-x64.rpm) |
-| Linux ARM64 | [.deb](https://github.com/INCY-DEV/incy-linux/releases/latest/download/incy-linux-arm64.deb) · [.rpm](https://github.com/INCY-DEV/incy-linux/releases/latest/download/incy-linux-arm64.rpm) |
+| Windows x64 | [Setup EXE](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-x64-setup.exe) |
+| Windows ARM64 | [Setup EXE](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-arm64-setup.exe) |
+| macOS (Apple Silicon) | [DMG](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-macos-arm64.dmg) |
+| macOS (Intel) | [DMG](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-macos-intel.dmg) |
+| Linux x64 | [.deb](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-platforms-x64.deb) · [.rpm](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-platforms-x64.rpm) |
+| Linux ARM64 | [.deb](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-platforms-arm64.deb) · [.rpm](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-platforms-arm64.rpm) |
 
 ## Protocols
 
