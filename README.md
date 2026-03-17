@@ -27,8 +27,8 @@ Cross-platform proxy client built on [Xray-core](https://github.com/XTLS/Xray-co
 | Windows ARM64 | [Setup EXE](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-arm64-setup.exe) · [Portable ZIP](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-arm64-portable.zip) |
 | macOS (Apple Silicon) | [DMG](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-macos-arm64.dmg) |
 | macOS (Intel) | [DMG](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-macos-intel.dmg) |
-| Linux x64 | [.deb](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64.deb) · [.rpm](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64.rpm) · [Portable ZIP](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64-portable.zip) |
-| Linux ARM64 | [.deb](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64.deb) · [.rpm](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64.rpm) · [Portable ZIP](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64-portable.zip) |
+| Linux x64 | [.deb](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64.deb) · [.rpm](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64.rpm) · [.pkg.tar.zst](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64.pkg.tar.zst) · [Portable ZIP](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64-portable.zip) |
+| Linux ARM64 | [.deb](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64.deb) · [.rpm](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64.rpm) · [.pkg.tar.zst](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64.pkg.tar.zst) · [Portable ZIP](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64-portable.zip) |
 
 ## Protocols
 
