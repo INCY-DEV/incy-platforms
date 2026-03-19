@@ -41,7 +41,7 @@
 | Architecture | DEB (Debian/Ubuntu) | RPM (Fedora/RHEL) | PKG (Arch) | Portable |
 |:-------------|:--------------------|:-------------------|:-----------|:---------|
 | x64 | [.deb](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64.deb) | [.rpm](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64.rpm) | [.pkg.tar.zst](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64.pkg.tar.zst) | [ZIP](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64-portable.zip) |
-| ARM64 | [.deb](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64.deb) | [.rpm](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64.rpm) | [.pkg.tar.zst](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64.pkg.tar.zst) | [ZIP](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64-portable.zip) |
+| ARM64 | [.deb](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64.deb) | [.rpm](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64.rpm) | — | [ZIP](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64-portable.zip) |
 
 ## Protocols
 
