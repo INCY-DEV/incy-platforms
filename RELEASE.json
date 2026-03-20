@@ -1,8 +1,8 @@
 {
   "android": {
-    "version": "1.7.5",
+    "version": "1.7.3",
     "download": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/Incy.apk",
-    "name": "INCY 1.7.2"
+    "name": "INCY 1.7.3"
   },
   "desktop": {
     "version": "1.0.27",
@@ -28,7 +28,7 @@
     "name": "INCY Desktop 1.0.27"
   },
   "ios": {
-    "version": "1.1.1",
+    "version": "1.1.0",
     "build": "5",
     "AppStore": "https://apps.apple.com/us/app/incy/id6756943388",
     "name": "INCY 1.1.0"
