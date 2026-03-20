@@ -1,0 +1,36 @@
+{
+  "android": {
+    "version": "1.7.5",
+    "download": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/Incy.apk",
+    "name": "INCY 1.7.2"
+  },
+  "desktop": {
+    "version": "1.0.27",
+    "windows": {
+      "x64": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-x64-setup.exe",
+      "arm64": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-arm64-setup.exe",
+      "x64_portable": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-x64-portable.zip",
+      "arm64_portable": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-arm64-portable.zip"
+    },
+    "macos": {
+      "arm64": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-macos-arm64.dmg",
+      "intel": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-macos-intel.dmg"
+    },
+    "linux": {
+      "x64_deb": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64.deb",
+      "arm64_deb": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64.deb",
+      "x64_rpm": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64.rpm",
+      "arm64_rpm": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64.rpm",
+      "x64_arch": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64.pkg.tar.zst",
+      "x64_portable": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64-portable.zip",
+      "arm64_portable": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64-portable.zip"
+    },
+    "name": "INCY Desktop 1.0.27"
+  },
+  "ios": {
+    "version": "1.1.0",
+    "build": "5",
+    "AppStore": "https://apps.apple.com/us/app/incy/id6756943388",
+    "name": "INCY 1.1.0"
+  }
+}
