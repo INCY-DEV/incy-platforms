@@ -26,8 +26,7 @@
 
 | Architecture | Installer | Portable |
 |:-------------|:----------|:---------|
-| x64 | [Setup EXE](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-x64-setup.exe) | [ZIP](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-x64-portable.zip) |
-| ARM64 | [Setup EXE](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-arm64-setup.exe) | [ZIP](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-arm64-portable.zip) |
+| ARM64 / x64 | [Setup EXE](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-x64-setup.exe) | [ZIP](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-x64-portable.zip) |
 
 ### macOS
 
