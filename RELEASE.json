@@ -7,10 +7,10 @@
   "desktop": {
     "version": "1.0.30",
     "windows": {
-      "x64": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-x64-setup.exe",
-      "arm64": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-arm64-setup.exe",
-      "x64_portable": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-x64-portable.zip",
-      "arm64_portable": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-arm64-portable.zip"
+      "x64": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-setup.exe",
+      "arm64": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-setup.exe",
+      "x64_portable": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-portable.zip",
+      "arm64_portable": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-portable.zip"
     },
     "macos": {
       "arm64": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-macos-arm64.dmg",
