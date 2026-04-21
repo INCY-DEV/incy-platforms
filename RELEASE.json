@@ -1,8 +1,8 @@
 {
   "android": {
-    "version": "2.5.8",
+    "version": "2.5.9",
     "download": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/Incy.apk",
-    "name": "INCY 2.5.8"
+    "name": "INCY 2.5.9"
   },
   "desktop": {
     "version": "2.1.2",
