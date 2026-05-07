@@ -24,11 +24,15 @@
 
 ### Windows
 
+`DESKTOP IS IN ALPHA!`
+
 | Architecture | Installer | Portable |
 |:-------------|:----------|:---------|
 | ARM64 / x64 | [Setup EXE](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-setup.exe) | [ZIP](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-portable.zip) |
 
 ### macOS
+
+`DESKTOP IS IN ALPHA!`
 
 | Architecture | Installer |
 |:-------------|:----------|
@@ -36,6 +40,8 @@
 | Intel | [DMG](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-macos-intel.dmg) |
 
 ### Linux
+
+`DESKTOP IS IN ALPHA!`
 
 | Architecture | DEB (Debian/Ubuntu) | RPM (Fedora/RHEL) | PKG (Arch) | Portable |
 |:-------------|:--------------------|:-------------------|:-----------|:---------|
