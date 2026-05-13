@@ -1,8 +1,8 @@
 {
   "android": {
-    "version": "2.8.0",
+    "version": "2.9.3",
     "download": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/Incy.apk",
-    "name": "INCY 2.8.0"
+    "name": "INCY 2.9.3"
   },
   "desktop": {
     "version": "3.0.36",
@@ -28,8 +28,8 @@
     "name": "INCY Desktop 3.0.36"
   },
   "ios": {
-    "version": "2.1.2",
-    "build": "3",
+    "version": "2.1.6",
+    "build": "2",
     "AppStore": "https://apps.apple.com/us/app/incy/id6756943388",
     "name": "INCY 2.1.2"
   }
