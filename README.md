@@ -18,35 +18,9 @@
 
 | Platform | Link |
 |:---------|:-----|
-| iOS / Apple TV | [App Store](https://apps.apple.com/ru/app/incy/id6756943388) |
+| iOS / Apple TV / MacOS | [App Store](https://apps.apple.com/ru/app/incy/id6756943388) |
 | Android / Android TV | [Google Play](https://play.google.com/store/apps/details?id=llc.itdev.incy) |
 | Android APK (sideload) | [Download APK](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/Incy.apk) |
-
-### Windows
-
-`DESKTOP IS IN ALPHA!`
-
-| Architecture | Installer | Portable |
-|:-------------|:----------|:---------|
-| ARM64 / x64 | [Setup EXE](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-setup.exe) | [ZIP](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-portable.zip) |
-
-### macOS
-
-`DESKTOP IS IN ALPHA!`
-
-| Architecture | Installer |
-|:-------------|:----------|
-| Apple Silicon | [DMG](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-macos-arm64.dmg) |
-| Intel | [DMG](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-macos-intel.dmg) |
-
-### Linux
-
-`DESKTOP IS IN ALPHA!`
-
-| Architecture | DEB (Debian/Ubuntu) | RPM (Fedora/RHEL) | PKG (Arch) | Portable |
-|:-------------|:--------------------|:-------------------|:-----------|:---------|
-| x64 | [.deb](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64.deb) | [.rpm](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64.rpm) | [.pkg.tar.zst](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64.pkg.tar.zst) | [ZIP](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64-portable.zip) |
-| ARM64 | [.deb](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64.deb) | [.rpm](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64.rpm) | — | [ZIP](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64-portable.zip) |
 
 ## Protocols
 
