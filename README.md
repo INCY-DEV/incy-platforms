@@ -5,7 +5,7 @@
 **Cross-platform proxy client built on [Xray-core](https://github.com/XTLS/Xray-core)**
 
 [![Website](https://img.shields.io/badge/incy.cc-6c5ce7?style=flat-square&logo=safari&logoColor=white)](https://incy.cc)
-[![Docs](https://img.shields.io/badge/Documentation-346DDB?style=flat-square&logo=gitbook&logoColor=white)](https://incy.gitbook.io/docs)
+[![Docs](https://img.shields.io/badge/Documentation-346DDB?style=flat-square&logo=gitbook&logoColor=white)](https://docs.incy.cc)
 [![iOS](https://img.shields.io/badge/iOS-App_Store-0D96F6?logo=app-store&logoColor=white)](https://apps.apple.com/ru/app/incy/id6756943388)
 [![Android](https://img.shields.io/badge/Android-Google_Play-414141?logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=llc.itdev.incy)
 [![Telegram](https://img.shields.io/badge/Telegram-incy__public-26A5E4?logo=telegram&logoColor=white)](https://t.me/incy_public)
@@ -40,7 +40,7 @@
 
 Full setup guides, configuration reference, and troubleshooting:
 
-**[incy.gitbook.io/docs](https://incy.gitbook.io/docs)**
+**[docs.incy.cc](https://docs.incy.cc)**
 
 ## Legal
 
