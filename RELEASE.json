@@ -1,11 +1,11 @@
 {
   "android": {
-    "version": "3.2.1",
+    "version": "3.3.6",
     "download": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/Incy.apk",
-    "name": "INCY 3.2.1"
+    "name": "INCY 3.3.6"
   },
   "desktop": {
-    "version": "3.2.3",
+    "version": "3.3.4",
     "windows": {
       "x64": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-setup.exe",
       "arm64": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-setup.exe",
@@ -25,12 +25,12 @@
       "x64_portable": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64-portable.zip",
       "arm64_portable": "https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64-portable.zip"
     },
-    "name": "INCY Desktop 3.2.3"
+    "name": "INCY Desktop 3.3.4"
   },
   "ios": {
-    "version": "2.3.1",
-    "build": "1",
+    "version": "2.4.5",
+    "build": "2007260046",
     "AppStore": "https://apps.apple.com/us/app/incy/id6756943388",
-    "name": "INCY 2.3.1"
+    "name": "INCY 2.4.5"
   }
 }
