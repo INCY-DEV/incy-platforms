@@ -45,14 +45,14 @@
 
 ## Features
 
-- **Subscription management** -- add servers via URL, QR code, or share link; auto-refresh keeps your list up to date
-- **Routing profiles** -- split traffic by domain/IP rules: proxy, direct, or block; separate DNS for remote and domestic resolution
-- **Full config import** -- paste a raw Xray JSON with observatory, balancers, and custom geo files
-- **TLS fragmentation** -- fragment ClientHello to bypass DPI; configurable packet type, length, and interval
-- **Per-app proxy** -- route or exclude individual applications (Android, Windows, macOS, Linux)
-- **Siri Shortcuts** -- connect, disconnect, toggle, and check VPN status via voice or automation
-- **Customization** -- 16 app icons, multiple themes, system tray with quick settings (desktop)
-- **Privacy** -- zero data collection; all configuration stays on-device
+- **Subscription management** — add servers via URL, QR code, or share link; auto-refresh keeps your list up to date
+- **Routing profiles** — split traffic by domain/IP rules: proxy, direct, or block; separate DNS for remote and domestic resolution
+- **Full config import** — paste a raw Xray JSON with observatory, balancers, and custom geo files
+- **TLS fragmentation** — fragment ClientHello to bypass DPI; configurable packet type, length, and interval
+- **Per-app proxy** — route or exclude individual applications (Android, Windows, macOS, Linux)
+- **Siri Shortcuts** — connect, disconnect, toggle, and check VPN status via voice or automation
+- **Customization** — 16 app icons, multiple themes, system tray with quick settings (desktop)
+- **Privacy** — zero data collection; all configuration stays on-device
 
 ## Documentation
 
