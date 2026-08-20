@@ -45,14 +45,21 @@
 
 ## Features
 
-- **Subscription management** — add servers via URL, QR code, or share link; auto-refresh keeps your list up to date
-- **Routing profiles** — split traffic by domain/IP rules: proxy, direct, or block; separate DNS for remote and domestic resolution
-- **Full config import** — paste a raw Xray JSON with observatory, balancers, and custom geo files
-- **TLS fragmentation** — fragment ClientHello to bypass DPI; configurable packet type, length, and interval
-- **Per-app proxy** — route or exclude individual applications (Android, Windows, macOS, Linux)
-- **Siri Shortcuts** — connect, disconnect, toggle, and check VPN status via voice or automation
-- **Customization** — 16 app icons, multiple themes, system tray with quick settings (desktop)
-- **Privacy** — zero data collection; all configuration stays on-device
+| | Mobile & TV | Desktop |
+|:--|:-:|:-:|
+| **Subscriptions** — add by URL, QR or share link, with auto-refresh | ✅ | ✅ |
+| **Routing profiles** — split traffic by domain/IP into proxy, direct or block, with separate remote and domestic DNS | ✅ | ✅ |
+| **Full config import** — raw Xray JSON, including observatory, balancers and custom geo files | ✅ | ✅ |
+| **TLS fragmentation** — fragment ClientHello past DPI; packet type, length and interval are configurable | ✅ | ✅ |
+| **Kill switch** — cut traffic if the tunnel drops, so nothing escapes through the gap | ✅ | ✅ |
+| **Per-app proxy** — route or exclude individual apps | Android | ✅ |
+| **Send to TV** — push a subscription or a single server to Apple TV / Android TV by QR or pairing code | ✅ | — |
+| **Shortcuts & widgets** — connect, disconnect and check status without opening the app | ✅ | Tray |
+| **Customization** — 16 app icons and several themes | ✅ | ✅ |
+
+**Privacy** — servers, keys and subscriptions never leave your device. Mobile
+builds include Firebase Crashlytics for crash reports; the desktop client sends
+no telemetry at all.
 
 ## Documentation
 
