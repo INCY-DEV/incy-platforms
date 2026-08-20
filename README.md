@@ -56,37 +56,28 @@
 
 ## Documentation
 
-Full setup guides, configuration reference, and troubleshooting:
-
+Setup guides, configuration reference and troubleshooting —
 **[docs.incy.cc](https://docs.incy.cc)**
 
 ## Bug reports & feature requests
 
 > [!IMPORTANT]
-> **All reports go through [feedback.incy.cc](https://feedback.incy.cc) — this is
-> the only place we track them.**
->
-> Reports sent anywhere else (chat, DMs, GitHub issues) will get lost. The
-> tracker keeps everything in one queue, tied to a version and a platform, so
-> nothing is missed and you can follow what happened to your report.
+> All reports go through **[feedback.incy.cc](https://feedback.incy.cc)** — the
+> only place we track them. Anything sent to chat, DMs or GitHub issues will get
+> lost.
 
-**[feedback.incy.cc](https://feedback.incy.cc)**
+Include the app version, your platform, and what you expected to happen instead.
+For tunnel problems, attach the logs from Settings.
 
-A good report includes the app version, the platform, and what you expected to
-happen instead. If the tunnel is involved, tunnel logs from Settings help a lot.
-
-For everything else — questions, setup help, general discussion — we are in
-[@incy_public](https://t.me/incy_public).
+Questions, setup help and general discussion — [@incy_public](https://t.me/incy_public).
 
 ## Support the project
 
-INCY is free, collects nothing, and sells nothing. If it is useful to you, a
+INCY is free, collects nothing and sells nothing. If it is useful to you, a
 donation keeps it that way.
 
-| | |
-|:--|:--|
-| [![Telegram](https://img.shields.io/badge/Telegram-@incyhelperbot-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/incyhelperbot) | Cards, Telegram Stars, and help |
-| [![Crypto](https://img.shields.io/badge/Crypto-OxaPay-0B0E11?style=flat-square&logo=bitcoin&logoColor=F7931A)](https://pay.oxapay.com/16388144) | BTC, ETH, USDT and others |
+- **[@incyhelperbot](https://t.me/incyhelperbot)** — cards, Telegram Stars, and support
+- **[OxaPay](https://pay.oxapay.com/16388144)** — BTC, ETH, USDT and others
 
 ## Legal
 
