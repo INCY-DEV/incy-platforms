@@ -6,7 +6,7 @@
 
 [![Website](https://img.shields.io/badge/incy.cc-6c5ce7?style=flat-square&logo=safari&logoColor=white)](https://incy.cc)
 [![Docs](https://img.shields.io/badge/Documentation-346DDB?style=flat-square&logo=gitbook&logoColor=white)](https://docs.incy.cc)
-[![Feedback](https://img.shields.io/badge/Feedback-2ea44f?style=flat-square&logo=github&logoColor=white)](https://feedback.incy.cc)
+[![Report a bug](https://img.shields.io/badge/Report_a_bug-feedback.incy.cc-2ea44f?style=flat-square&logo=github&logoColor=white)](https://feedback.incy.cc)
 [![iOS](https://img.shields.io/badge/iOS-App_Store-0D96F6?style=flat-square&logo=app-store&logoColor=white)](https://apps.apple.com/ru/app/incy/id6756943388)
 [![Android](https://img.shields.io/badge/Android-Google_Play-414141?style=flat-square&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=llc.itdev.incy)
 [![Telegram](https://img.shields.io/badge/Telegram-incy__public-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/incy_public)
@@ -27,8 +27,9 @@
 
 > [!WARNING]
 > The desktop client is **pre-alpha**. It is usable day to day, but expect rough
-> edges and breaking changes between releases. Please report anything you hit —
-> that is exactly what this stage is for.
+> edges and breaking changes between releases. Please report anything you hit at
+> [feedback.incy.cc](https://feedback.incy.cc) — that is exactly what this stage
+> is for.
 
 | Platform | Installer | Portable |
 |:---------|:----------|:---------|
@@ -59,13 +60,23 @@ Full setup guides, configuration reference, and troubleshooting:
 
 **[docs.incy.cc](https://docs.incy.cc)**
 
-## Feedback
+## Bug reports & feature requests
 
-Found a bug, or want a feature? Open it here — every report is read:
+> [!IMPORTANT]
+> **All reports go through [feedback.incy.cc](https://feedback.incy.cc) — this is
+> the only place we track them.**
+>
+> Reports sent anywhere else (chat, DMs, GitHub issues) will get lost. The
+> tracker keeps everything in one queue, tied to a version and a platform, so
+> nothing is missed and you can follow what happened to your report.
 
 **[feedback.incy.cc](https://feedback.incy.cc)**
 
-For anything else, reach us in [@incy_public](https://t.me/incy_public).
+A good report includes the app version, the platform, and what you expected to
+happen instead. If the tunnel is involved, tunnel logs from Settings help a lot.
+
+For everything else — questions, setup help, general discussion — we are in
+[@incy_public](https://t.me/incy_public).
 
 ## Support the project
 
