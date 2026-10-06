@@ -1,0 +1,9 @@
+[
+  {
+    "id": "llc.itdev.incy",
+    "url": "https://github.com/INCY-DEV/incy-platforms",
+    "author": "INCY-DEV",
+    "name": "INCY",
+    "additionalSettings": "{\"filterReleaseTitlesByRegEx\":\"^Android v[0-9]+\\\\.[0-9]+\\\\.[0-9]+$\",\"apkFilterRegEx\":\"^[Ii]ncy\\\\.apk$\",\"versionExtractionRegEx\":\"[0-9]+\\\\.[0-9]+\\\\.[0-9]+\",\"verifyLatestTag\":false,\"fallbackToOlderReleases\":true,\"includePrereleases\":false}"
+  }
+]

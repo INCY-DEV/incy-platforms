@@ -1,0 +1,78 @@
+name: Publish Android APK
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Expected versionName, e.g. 3.7.0; leave empty to read it from the APK'
+        required: false
+        type: string
+      apk_url:
+        description: 'HTTPS download URL of the already signed release APK'
+        required: true
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: platform-release-manifest
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Download and verify signed APK
+        env:
+          VERSION: ${{ inputs.version }}
+          APK_URL: ${{ inputs.apk_url }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ -z "$VERSION" || "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]
+          [[ "$APK_URL" == https://* ]]
+          mkdir -p "$RUNNER_TEMP/android-release"
+          curl --fail --location --retry 3 --max-time 600 --proto '=https' --proto-redir '=https' \
+            "$APK_URL" -o "$RUNNER_TEMP/android-release/Incy.apk"
+          BUILD_TOOLS=$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)
+          "$BUILD_TOOLS/apksigner" verify "$RUNNER_TEMP/android-release/Incy.apk"
+          "$BUILD_TOOLS/aapt" dump badging "$RUNNER_TEMP/android-release/Incy.apk" > "$RUNNER_TEMP/apk-info.txt"
+          python3 - <<'PY'
+          import os, re
+          from pathlib import Path
+          info = Path(os.environ['RUNNER_TEMP'], 'apk-info.txt').read_text()
+          package = re.search(r"^package: name='([^']+)'.*versionName='([^']+)'", info, re.M)
+          if not package or package[1] != 'llc.itdev.incy' or not re.fullmatch(r'\d+\.\d+\.\d+', package[2]):
+              raise SystemExit('APK package/version does not match an INCY stable release')
+          if os.environ['VERSION'] and package[2] != os.environ['VERSION']:
+              raise SystemExit('APK version differs from the requested version')
+          with open(os.environ['GITHUB_ENV'], 'a') as env:
+              env.write('APK_VERSION=' + package[2] + '\n')
+          if re.search(r'^application-debuggable', info, re.M):
+              raise SystemExit('Refusing to publish a debuggable APK')
+          PY
+          (cd "$RUNNER_TEMP/android-release" && sha256sum Incy.apk > SHA256SUMS)
+      - name: Publish Android-only release and update links
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ env.APK_VERSION }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          TAG="android-v$VERSION"
+          # Versioned releases are immutable. An existing tag is an error;
+          # never silently replace an APK users may already have installed.
+          printf 'INCY Android %s\n\nAndroid APK only. Obtainium: filter release titles with `^Android v`, APKs with `^[Ii]ncy\\.apk$`, and disable Verify Latest Tag.\n' "$VERSION" > "$RUNNER_TEMP/notes.md"
+          gh release create "$TAG" "$RUNNER_TEMP/android-release/Incy.apk" "$RUNNER_TEMP/android-release/SHA256SUMS" \
+            --repo "$GITHUB_REPOSITORY" --target main --title "Android v$VERSION" \
+            --notes-file "$RUNNER_TEMP/notes.md" --latest=false
+          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$TAG" > "$RUNNER_TEMP/release.json"
+          # GITHUB_TOKEN releases do not trigger other workflows: sync here too.
+          python3 scripts/update_manifest.py "$RUNNER_TEMP/release.json"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add RELEASE.json README.md
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Update download links for $TAG"
+          git pull --rebase origin main
+          git push origin HEAD:main

@@ -33,11 +33,35 @@
 
 | Platform | Installer | Portable |
 |:---------|:----------|:---------|
-| Windows (x64 / ARM64) | [Setup](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-setup.exe) | [ZIP](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-portable.zip) |
-| macOS (Apple Silicon) | [DMG](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-macos-arm64.dmg) | — |
-| macOS (Intel) | [DMG](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-macos-intel.dmg) | — |
-| Linux (x64) | [DEB](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64.deb) · [RPM](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64.rpm) · [Arch](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64.pkg.tar.zst) | [ZIP](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-x64-portable.zip) |
-| Linux (ARM64) | [DEB](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64.deb) · [RPM](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64.rpm) | [ZIP](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-linux-arm64-portable.zip) |
+| Windows (x64 / ARM64) | [Setup](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-windows-setup.exe) | [ZIP](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-windows-portable.zip) |
+| macOS (Apple Silicon) | [DMG](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-macos-arm64.dmg) | — |
+| macOS (Intel) | [DMG](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-macos-intel.dmg) | — |
+| Linux (x64) | [DEB](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-linux-x64.deb) · [RPM](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-linux-x64.rpm) · [Arch](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-linux-x64.pkg.tar.zst) | [ZIP](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-linux-x64-portable.zip) |
+| Linux (ARM64) | [DEB](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-linux-arm64.deb) · [RPM](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-linux-arm64.rpm) | [ZIP](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-linux-arm64-portable.zip) |
+
+## Android updates with Obtainium
+
+Android releases use **`android-vX.Y.Z`** (title **`Android vX.Y.Z`**).
+Desktop releases use **`desktop-vX.Y.Z`**. Their versions are independent.
+
+[Add INCY to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22llc.itdev.incy%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2FINCY-DEV%2Fincy-platforms%22%2C%22author%22%3A%22INCY-DEV%22%2C%22name%22%3A%22INCY%22%2C%22additionalSettings%22%3A%22%7B%5C%22filterReleaseTitlesByRegEx%5C%22%3A%5C%22%5EAndroid%20v%5B0-9%5D%2B%5C%5C%5C%5C.%5B0-9%5D%2B%5C%5C%5C%5C.%5B0-9%5D%2B%24%5C%22%2C%5C%22apkFilterRegEx%5C%22%3A%5C%22%5E%5BIi%5Dncy%5C%5C%5C%5C.apk%24%5C%22%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22%5B0-9%5D%2B%5C%5C%5C%5C.%5B0-9%5D%2B%5C%5C%5C%5C.%5B0-9%5D%2B%5C%22%2C%5C%22verifyLatestTag%5C%22%3Afalse%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%2C%5C%22includePrereleases%5C%22%3Afalse%7D%22%7D) · [Import configuration](obtainium.json)
+
+For an existing Obtainium entry, use these settings:
+
+| Setting | Value |
+|:--------|:------|
+| Source | `https://github.com/INCY-DEV/incy-platforms` |
+| Filter release titles by regular expression | `^Android v[0-9]+\.[0-9]+\.[0-9]+$` |
+| Filter APKs by regular expression | `^[Ii]ncy\.apk$` |
+| Version string extraction | `[0-9]+\.[0-9]+\.[0-9]+` |
+| Verify Latest Tag | **Off** — GitHub's global latest release may be desktop |
+| Fallback to older releases | **On** |
+
+New Android releases contain only the signed APK and its checksum. Existing
+mixed releases remain available for old download links; the title filter
+excludes them. Direct download links above and in [RELEASE.json](RELEASE.json)
+are updated independently for each platform. For automated publishing, see
+[RELEASING.md](RELEASING.md).
 
 ## Protocols
 
