@@ -33,7 +33,7 @@ jobs:
           # Fail rather than advertise a partly uploaded release.
           for attempt in 1 2 3 4 5 6; do
             gh api "repos/$GITHUB_REPOSITORY/releases/tags/$RELEASE_TAG" --silent
-            gh api "repos/$GITHUB_REPOSITORY/releases?per_page=100" --paginate --slurp --jq 'add' > "$RUNNER_TEMP/releases.json"
+            gh api "repos/$GITHUB_REPOSITORY/releases?per_page=100" --paginate --slurp | jq 'add' > "$RUNNER_TEMP/releases.json"
             if python3 scripts/update_manifest.py "$RUNNER_TEMP/releases.json"; then break; fi
             if [[ "$attempt" == 6 ]]; then exit 1; fi
             sleep 10
