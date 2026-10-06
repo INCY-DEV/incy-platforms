@@ -21,7 +21,7 @@
 |:---------|:-----|
 | iOS / Apple TV / macOS | [App Store](https://apps.apple.com/ru/app/incy/id6756943388) |
 | Android / Android TV | [Google Play](https://play.google.com/store/apps/details?id=llc.itdev.incy) |
-| Android APK (sideload) | [Download APK](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/Incy.apk) |
+| Android APK (sideload) | [Download APK](https://github.com/INCY-DEV/incy-platforms/releases/download/android-v3.7.0/Incy.apk) |
 
 ### Desktop
 
