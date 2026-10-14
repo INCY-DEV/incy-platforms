@@ -33,11 +33,11 @@
 
 | Platform | Installer | Portable |
 |:---------|:----------|:---------|
-| Windows (x64 / ARM64) | [Setup](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-windows-setup.exe) | [ZIP](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-windows-portable.zip) |
-| macOS (Apple Silicon) | [DMG](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-macos-arm64.dmg) | — |
-| macOS (Intel) | [DMG](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-macos-intel.dmg) | — |
-| Linux (x64) | [DEB](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-linux-x64.deb) · [RPM](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-linux-x64.rpm) · [Arch](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-linux-x64.pkg.tar.zst) | [ZIP](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-linux-x64-portable.zip) |
-| Linux (ARM64) | [DEB](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-linux-arm64.deb) · [RPM](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-linux-arm64.rpm) | [ZIP](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.8/incy-linux-arm64-portable.zip) |
+| Windows (x64 / ARM64) | [Setup](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-windows-setup.exe) | [ZIP](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-windows-portable.zip) |
+| macOS (Apple Silicon) | [DMG](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-macos-arm64.dmg) | — |
+| macOS (Intel) | [DMG](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-macos-intel.dmg) | — |
+| Linux (x64) | [DEB](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-linux-x64.deb) · [RPM](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-linux-x64.rpm) · [Arch](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-linux-x64.pkg.tar.zst) | [ZIP](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-linux-x64-portable.zip) |
+| Linux (ARM64) | [DEB](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-linux-arm64.deb) · [RPM](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-linux-arm64.rpm) | [ZIP](https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-linux-arm64-portable.zip) |
 
 ## Android updates with Obtainium
 
