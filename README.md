@@ -54,7 +54,7 @@ For an existing Obtainium entry, use these settings:
 | Filter release titles by regular expression | `^Android v[0-9]+\.[0-9]+\.[0-9]+$` |
 | Filter APKs by regular expression | `^[Ii]ncy\.apk$` |
 | Version string extraction | `[0-9]+\.[0-9]+\.[0-9]+` |
-| Verify Latest Tag | **Off** — GitHub's global latest release may be desktop |
+| Verify Latest Tag | **Off** — `latest` combines independently versioned platforms |
 | Fallback to older releases | **On** |
 
 New Android releases contain only the signed APK and its checksum. Existing
@@ -62,6 +62,10 @@ mixed releases remain available for old download links; the title filter
 excludes them. Direct download links above and in [RELEASE.json](RELEASE.json)
 are updated independently for each platform. For automated publishing, see
 [RELEASING.md](RELEASING.md).
+
+The download buttons use the permanent `latest` tag. [RELEASE.json](RELEASE.json)
+keeps version-specific URLs for application updates.
+
 
 ## Protocols
 
