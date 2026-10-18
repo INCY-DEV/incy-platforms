@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   update:
-    if: github.event_name == 'workflow_dispatch' || (!github.event.release.draft && !github.event.release.prerelease)
+    if: github.event_name == 'workflow_dispatch' || ((!github.event.release.draft && !github.event.release.prerelease) && (startsWith(github.event.release.tag_name, 'android-v') || startsWith(github.event.release.tag_name, 'desktop-v')))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -38,6 +38,10 @@ jobs:
             if [[ "$attempt" == 6 ]]; then exit 1; fi
             sleep 10
           done
+      - name: Update permanent latest downloads
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/sync_latest.py
       - name: Commit platform-specific links
         env:
           RELEASE_TAG: ${{ inputs.tag || github.event.release.tag_name }}

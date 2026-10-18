@@ -33,12 +33,22 @@ its platform's versioned release. Manifest updates preserve the other platforms,
 refuse incomplete releases and never roll a platform back to an older version.
 The workflow serializes Android/desktop metadata updates.
 
-GitHub provides only one global `/releases/latest`. Android publication sets
-`latest=false`; desktop keeps that label for existing desktop download URLs.
-New consumers must use the manifest or versioned links. The old Android
-`/releases/latest/download/Incy.apk` may return a legacy APK or become unavailable
-when a new desktop release is published; migrate those links to `android.download`
-in RELEASE.json. Existing mixed releases are retained, not deleted or retagged.
+The permanent tag `latest` contains the complete current Desktop asset set and
+`Incy.apk` for the current Android version. README links use
+`/releases/download/latest/<asset>`; the global `/releases/latest/download/`
+redirect is also supported after synchronization. `SHA256SUMS` covers both platforms.
+
+Both publication workflows validate source releases, download and verify their
+assets, then synchronize `latest`. Only after successful synchronization are
+manifest/README updates committed. Release events for `latest` are ignored to
+prevent recursion. Updating one platform preserves the other platform's version.
+`RELEASE.json` stays pinned to versioned assets so a client sees the exact binary
+matching its advertised version. Historical releases are retained.
+
+To upload a new Android build, run **Publish Android APK** with the signed APK's
+HTTPS URL, or upload `Incy.apk` to a new `android-vX.Y.Z` release titled
+`Android vX.Y.Z`, then run **Update platform download links** with that tag if
+necessary. Never upload a new APK only to `latest`: it is a generated mirror.
 
 Obtainium must use the Android title filter in the README and disable Verify
 Latest Tag. Import `obtainium.json` for those settings. It should not track the

@@ -1,4 +1,4 @@
-"""Update one platform from a published GitHub release; never use global /latest."""
+"""Keep versioned update feeds and permanent README download links."""
 import argparse
 import json
 import re
@@ -69,7 +69,7 @@ def main():
     text = readme.read_text()
     for name, url in urls.items():
         pattern = rf"https://github\.com/{re.escape(REPO)}/releases/(?:latest/download|download/[^/\s)]+)/{re.escape(name)}(?=[\s)\"<>]|$)"
-        text = re.sub(pattern, lambda _: url, text)
+        text = re.sub(pattern, lambda _: f"https://github.com/{REPO}/releases/download/latest/{name}", text)
     path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
     readme.write_text(text)
 

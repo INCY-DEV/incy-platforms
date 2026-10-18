@@ -68,7 +68,9 @@ jobs:
             --notes-file "$RUNNER_TEMP/notes.md" --latest=false
           gh api "repos/$GITHUB_REPOSITORY/releases/tags/$TAG" > "$RUNNER_TEMP/release.json"
           # GITHUB_TOKEN releases do not trigger other workflows: sync here too.
-          python3 scripts/update_manifest.py "$RUNNER_TEMP/release.json"
+          gh api "repos/$GITHUB_REPOSITORY/releases?per_page=100" --paginate --slurp | jq 'add' > "$RUNNER_TEMP/releases.json"
+          python3 scripts/update_manifest.py "$RUNNER_TEMP/releases.json"
+          python3 scripts/sync_latest.py
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add RELEASE.json README.md
