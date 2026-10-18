@@ -5,27 +5,27 @@
     "name": "INCY Android 3.7.0"
   },
   "desktop": {
-    "version": "3.8.10",
+    "version": "3.9.0",
     "windows": {
-      "x64": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-windows-setup.exe",
-      "arm64": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-windows-setup.exe",
-      "x64_portable": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-windows-portable.zip",
-      "arm64_portable": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-windows-portable.zip"
+      "x64": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.9.0/incy-windows-setup.exe",
+      "arm64": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.9.0/incy-windows-setup.exe",
+      "x64_portable": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.9.0/incy-windows-portable.zip",
+      "arm64_portable": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.9.0/incy-windows-portable.zip"
     },
     "macos": {
-      "arm64": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-macos-arm64.dmg",
-      "intel": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-macos-intel.dmg"
+      "arm64": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.9.0/incy-macos-arm64.dmg",
+      "intel": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.9.0/incy-macos-intel.dmg"
     },
     "linux": {
-      "x64_deb": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-linux-x64.deb",
-      "arm64_deb": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-linux-arm64.deb",
-      "x64_rpm": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-linux-x64.rpm",
-      "arm64_rpm": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-linux-arm64.rpm",
-      "x64_arch": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-linux-x64.pkg.tar.zst",
-      "x64_portable": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-linux-x64-portable.zip",
-      "arm64_portable": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.8.10/incy-linux-arm64-portable.zip"
+      "x64_deb": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.9.0/incy-linux-x64.deb",
+      "arm64_deb": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.9.0/incy-linux-arm64.deb",
+      "x64_rpm": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.9.0/incy-linux-x64.rpm",
+      "arm64_rpm": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.9.0/incy-linux-arm64.rpm",
+      "x64_arch": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.9.0/incy-linux-x64.pkg.tar.zst",
+      "x64_portable": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.9.0/incy-linux-x64-portable.zip",
+      "arm64_portable": "https://github.com/INCY-DEV/incy-platforms/releases/download/desktop-v3.9.0/incy-linux-arm64-portable.zip"
     },
-    "name": "INCY Desktop 3.8.10"
+    "name": "INCY Desktop 3.9.0"
   },
   "ios": {
     "version": "2.4.5",
