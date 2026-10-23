@@ -1,8 +1,8 @@
 {
   "android": {
-    "version": "3.7.9",
-    "download": "https://github.com/INCY-DEV/incy-platforms/releases/download/android-v3.7.9/Incy.apk",
-    "name": "INCY Android 3.7.9"
+    "version": "3.8.1",
+    "download": "https://github.com/INCY-DEV/incy-platforms/releases/download/android-v3.8.1/Incy.apk",
+    "name": "INCY Android 3.8.1"
   },
   "desktop": {
     "version": "3.9.0",
