@@ -28,9 +28,9 @@
     "name": "INCY Desktop 3.9.0"
   },
   "ios": {
-    "version": "2.4.5",
-    "build": "2007260046",
+    "version": "1.0.0",
+    "build": "1",
     "AppStore": "https://apps.apple.com/us/app/incy/id6756943388",
-    "name": "INCY 2.4.5"
+    "name": "INCY 1.0.0"
   }
 }
