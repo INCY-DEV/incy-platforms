@@ -6,7 +6,7 @@ import subprocess
 import tempfile
 from pathlib import Path
 
-from update_manifest import DESKTOP, REPO
+from update_manifest import DESKTOP, REPO, android_apk_version
 
 
 def gh(*args):
@@ -16,9 +16,12 @@ def gh(*args):
 def plan(manifest, read_release):
     result = []
     for platform in ('desktop', 'android'):
-        version = manifest[platform]['version']
+        entry = manifest[platform]
+        version = entry['version']
         if not re.fullmatch(r'\d+\.\d+\.\d+', version):
             raise ValueError('Invalid platform version')
+        if platform == 'android':
+            version = android_apk_version(entry) or version
         tag = f'{platform}-v{version}'
         release = read_release(tag)
         if release.get('draft') or release.get('prerelease') or release['tag_name'] != tag:
@@ -65,9 +68,10 @@ def main():
         checksums.write_text('\n'.join(sorted(sums)) + '\n')
         paths.append(str(checksums))
         notes = root / 'notes.md'
+        desktop_tag, android_tag = [tag for tag, _ in releases]
         notes.write_text(
-            f"Latest stable downloads: Desktop **{manifest['desktop']['version']}**, "
-            f"Android **{manifest['android']['version']}**.\n\n"
+            f"Latest stable downloads: Desktop **{desktop_tag.removeprefix('desktop-v')}**, "
+            f"Android **{android_tag.removeprefix('android-v')}**.\n\n"
             'Permanent download tag; files are updated independently by platform. '
             'For version history and Obtainium use `desktop-v*` / `android-v*` releases.\n'
         )

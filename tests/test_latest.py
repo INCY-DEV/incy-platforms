@@ -26,6 +26,13 @@ class LatestTest(unittest.TestCase):
         self.assertEqual(len(result[0][1]), 11)
         self.assertEqual(set(result[1][1]), {'Incy.apk'})
 
+    def test_android_mirrors_apk_from_url_when_announcement_is_pinned(self):
+        manifest, releases = self.fixture()
+        tag = 'android-v4.0.0'
+        manifest['android']['download'] = f'https://github.com/INCY-DEV/incy-platforms/releases/download/{tag}/Incy.apk'
+        releases[tag] = {'tag_name': tag, 'assets': [{'name': 'Incy.apk', 'size': 4}]}
+        self.assertEqual((tag, {'Incy.apk': releases[tag]['assets'][0]}), plan(manifest, releases.__getitem__)[1])
+
     def test_rejects_partial_draft_and_prerelease_before_publication(self):
         for kind in ['missing', 'draft', 'prerelease']:
             manifest, releases = self.fixture()

@@ -15,21 +15,36 @@ DESKTOP = {
               "arm64_portable": "incy-linux-arm64-portable.zip"},
 }
 
+def android_apk_version(entry):
+    match = re.fullmatch(
+        rf'https://github\.com/{re.escape(REPO)}/releases/download/android-v(\d+\.\d+\.\d+)/Incy\.apk',
+        entry.get('download', ''),
+    )
+    return match.group(1) if match else None
+
+
 def update(manifest, release):
     match = re.fullmatch(r"(android|desktop)-v(\d+\.\d+\.\d+)", release["tag_name"])
     if not match or release.get("draft") or release.get("prerelease"):
         raise ValueError("Expected a published stable android-vX.Y.Z or desktop-vX.Y.Z release")
     platform, version = match.groups()
-    old = manifest.get(platform, {}).get("version", "0.0.0")
-    if tuple(map(int, version.split('.'))) < tuple(map(int, old.split('.'))):
-        return {}  # Publishing an older version must not roll back clients.
+    entry = dict(manifest.get(platform, {}))
+    old = entry.get("version", "0.0.0")
+    current_versions = [old]
+    if platform == 'android' and (apk_version := android_apk_version(entry)):
+        current_versions.append(apk_version)
+    candidate = tuple(map(int, version.split('.')))
+    if any(candidate < tuple(map(int, current.split('.'))) for current in current_versions):
+        return {}  # Publishing an older version must not roll back clients or downloads.
     names = {a["name"] for a in release["assets"] if a.get("size", 0) > 0}
     required = {"Incy.apk"} if platform == "android" else {n for group in DESKTOP.values() for n in group.values()}
     if not required <= names:
         raise ValueError(f"Release assets not ready: missing {sorted(required - names)}")
     urls = {n: f"https://github.com/{REPO}/releases/download/{release['tag_name']}/{n}" for n in required}
-    entry = dict(manifest.get(platform, {}))
-    entry.update(version=version, name=f"INCY {'Android' if platform == 'android' else 'Desktop'} {version}")
+    # Keep a manually pinned Android announcement when reprocessing the same APK.
+    same_android_apk = platform == 'android' and entry.get('download') == urls['Incy.apk']
+    entry.update(version=old if same_android_apk and 'version' in entry else version,
+                 name=f"INCY {'Android' if platform == 'android' else 'Desktop'} {version}")
     if platform == 'android':
         entry['download'] = urls['Incy.apk']
     else:

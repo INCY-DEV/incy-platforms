@@ -42,8 +42,12 @@ Both publication workflows validate source releases, download and verify their
 assets, then synchronize `latest`. Only after successful synchronization are
 manifest/README updates committed. Release events for `latest` are ignored to
 prevent recursion. Updating one platform preserves the other platform's version.
-`RELEASE.json` stays pinned to versioned assets so a client sees the exact binary
-matching its advertised version. Historical releases are retained.
+`RELEASE.json` uses versioned assets. To offer a new Android APK for manual
+download while holding the in-app update, publish the APK and set
+`android.version` to the previously announced version. Synchronization keeps
+that value for the same APK and mirrors the versioned `android.download` into
+`latest`. To announce the APK, set `android.version` to its release version.
+Historical releases are retained.
 
 To upload a new Android build, run **Publish Android APK** with the signed APK's
 HTTPS URL, or upload `Incy.apk` to a new `android-vX.Y.Z` release titled

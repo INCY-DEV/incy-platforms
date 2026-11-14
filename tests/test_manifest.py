@@ -16,6 +16,23 @@ class ManifestTest(unittest.TestCase):
         self.assertEqual(original['desktop'], data['desktop'])
         self.assertEqual(original['ios'], data['ios'])
         self.assertIn('/android-v3.7.0/Incy.apk', data['android']['download'])
+    def test_android_announcement_stays_pinned_for_same_apk(self):
+        data = {}
+        release = self.release('android-v4.0.0', ['Incy.apk'])
+        m.update(data, release)
+        data['android']['version'] = '3.9.9'
+
+        m.update(data, release)
+        self.assertEqual('3.9.9', data['android']['version'])
+        self.assertIn('/android-v4.0.0/', data['android']['download'])
+        self.assertEqual('INCY Android 4.0.0', data['android']['name'])
+
+        self.assertEqual({}, m.update(data, self.release('android-v3.9.9', ['Incy.apk'])))
+        self.assertIn('/android-v4.0.0/', data['android']['download'])
+
+        m.update(data, self.release('android-v4.0.1', ['Incy.apk']))
+        self.assertEqual('4.0.1', data['android']['version'])
+
     def test_desktop_leaves_android_unchanged(self):
         data = {'android':{'version':'3.7.0','download':'kept'}}
         names = {n for group in m.DESKTOP.values() for n in group.values()}
