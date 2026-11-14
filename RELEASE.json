@@ -1,6 +1,6 @@
 {
   "android": {
-    "version": "4.0.0",
+    "version": "3.9.9",
     "download": "https://github.com/INCY-DEV/incy-platforms/releases/download/android-v4.0.0/Incy.apk",
     "name": "INCY Android 4.0.0"
   },
