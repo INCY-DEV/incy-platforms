@@ -112,7 +112,7 @@ INCY is free. Voluntary donations support its development and maintenance.
 
 - **[Tribute on the web](https://web.tribute.tg/d/oEG)**
 - **[Tribute in Telegram](https://t.me/tribute/app?startapp=doEG)**
-- **[OxaPay](https://pay.oxapay.com/16388144)** — cryptocurrency
+- **[Payred](https://go.payred.io/d/ee594130f693ecedf1ab8ef2f836171950bfde48bdcc5ad7)** — cryptocurrency
 - **[@incyhelperbot](https://t.me/incyhelperbot)** — cards, Telegram Stars, and support
 
 ## Legal
