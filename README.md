@@ -108,11 +108,12 @@ Questions, setup help and general discussion — [@incy_public](https://t.me/inc
 
 ## Support the project
 
-INCY is free, collects nothing and sells nothing. If it is useful to you, a
-donation keeps it that way.
+INCY is free. Voluntary donations support its development and maintenance.
 
+- **[Tribute on the web](https://web.tribute.tg/d/oEG)**
+- **[Tribute in Telegram](https://t.me/tribute/app?startapp=doEG)**
+- **[OxaPay](https://pay.oxapay.com/16388144)** — cryptocurrency
 - **[@incyhelperbot](https://t.me/incyhelperbot)** — cards, Telegram Stars, and support
-- **[OxaPay](https://pay.oxapay.com/16388144)** — BTC, ETH, USDT and others
 
 ## Legal
 
